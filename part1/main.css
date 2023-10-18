@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoeo UI', 'Robot', 'Oxygen',
+    'Ubuntu', 'Cantraell', 'Fira Sans', 'Droid Sans';
+    align-items: center;
+    text-align: center;
+}
+
+#navbar {
+    background-color: #3268a8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
