@@ -1,4 +1,7 @@
+import Navbar from "./Navbar";
 import React from "react";
+import CreatePurchase from "./CreatePurchase";
+import ViewPurchase from "./ViewPurchase";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
@@ -7,7 +10,7 @@ const App = () => {
             <Navbar />
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<View Purchase />} />
+                    <Route path="/" element={<ViewPurchase />} />
                     <Route path="/create" element={<CreatePurchase />} />
                 </Routes>
             </BrowserRouter>
