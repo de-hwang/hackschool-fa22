@@ -26,7 +26,7 @@ const CreatePurchase = () => {
                 </div>
                 <div className="create-row">
                     <label>Cost</label>
-                    <input type="number" name="cost" min="0" step="0.01" />
+                    <input type="number" name="cost" min="0" step="0.01" placeholder="Enter cost" />
                 </div>
                 <div className="create-row">
                     <label>Method</label>
