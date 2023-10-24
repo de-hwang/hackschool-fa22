@@ -1,0 +1,15 @@
+import axios from 'axios';
+
+const serverURL = 'http://localhost:8000';
+
+const API = {
+    getPurchase: function() {
+        return axios.get('${serverURL}/api/purchases');
+    },
+
+    createPurchase: function(payload) {
+        return axios.post('${serverURL}/api/purchases');
+    }
+}
+
+export default API;
