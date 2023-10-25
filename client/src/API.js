@@ -8,7 +8,7 @@ const API = {
     },
 
     createPurchase: function(payload) {
-        return axios.post('${serverURL}/api/purchases');
+        return axios.post('${serverURL}/api/purchases', payload);
     }
 }
 
