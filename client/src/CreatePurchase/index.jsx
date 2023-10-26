@@ -1,8 +1,42 @@
 import React from "react";
 import "./style.css";
+import API from "../API";
 
 const CreatePurchase = () => {
-    const onSubmit = () => {};
+    // const onSubmit = () => {}; //remove
+
+    const initialFormData = {
+        name: "",
+        description: "",
+        date: "",
+        cost: "",
+        method: "Cash"
+    };
+
+    const [formData, updateFormData] = useState(initialFormData);
+
+    const handleChange = (e) => {
+        updateFormData({
+            ...FormData,
+
+            // Trimming any white space
+            [e.target.name]: e.target.value.trim()
+        });
+    };
+
+    const handleCreatePurchase = async (e) => {
+        e.preventDefault();
+        const req = e.target;
+        console.log(req.name);
+        const payload = {
+            purchase: FormData
+        };
+        console.log(JSON.stringify(payload.purchase));
+        console.log(req);
+        console.log(e);
+        await API.createPurchase(payload);
+        alert("Created successfully");
+    };
 
     return (
         <div className="create-purchase-container">
