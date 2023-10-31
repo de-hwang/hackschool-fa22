@@ -70,7 +70,7 @@ const CreatePurchase = () => {
                         <option value="Crypto">Crypto</option>
                     </select>
                 </div>
-                <button className="submit-button" onClick={handleCreatePurchase}>
+                <button className="submit-button" onClick={(handleCreatePurchase)}>
                     Submit New Purchase
                 </button>
             </div>
