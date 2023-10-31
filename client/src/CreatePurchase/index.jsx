@@ -15,7 +15,7 @@ const CreatePurchase = () => {
 
     const handleChange = (e) => {
         updateFormData({
-            ...FormData,
+            ...formData,
 
             // Trimming any white space
             [e.target.name]: e.target.value.trim()
@@ -27,7 +27,7 @@ const CreatePurchase = () => {
         const req = e.target;
         console.log(req.name);
         const payload = {
-            purchase: FormData
+            purchase: formData
         };
         console.log(JSON.stringify(payload.purchase));
         console.log(req);
